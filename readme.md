@@ -29,6 +29,8 @@
 +   `fasterRCNN_train.py` 提供了训练`Faster-RCNN`模型的代码，包括解析并封装`VOC`数据集，优化器的选择，fasterRCNN的构建与训练。训练完成后的网络参数会保存在`results`目录下，训练过程会保存在`loss_and_mAP.json`文件中。
     
 +   `fasterRCNN_predict.py` 提供了测试`Faster-RCNN`模型的代码，会显示给定图片的检测结果，包括检测框（box）、类别标签（label）和得分（score）。
+
++   `caculate_mAP.py`提供了计算`mAP`的代码。
     
 +   `visualize.py`提供了训练过程和网络参数可视化代码。
 
