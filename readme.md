@@ -11,13 +11,19 @@
 ├── fasterRCNN_train.py
 ├── loss_and_mAP.json
 ├── pictures
-│   ├── aeroplane.png
-│   ├── car.png
-│   └── person.jpg
+│   ├── aeroplane.jpg
+│   ├── bird.jpg
+│   ├── car.jpg
+│   ├── cat.jpg
+│   ├── processed_aeroplane.jpg
+│   ├── processed_bird.jpg
+│   ├── processed_car.jpg
+│   └── processed_cat.jpg
 ├── readme.md
 ├── results
 │   └── my_fasterRCNN.pth
-└── utils.py
+├── utils.py
+└── visualize.py
 ```
 `VOCdevkit`文件下是`VOC`数据集，该数据集已经划分好训练集与测试集且`pytorch`有直接解析该数据集的函数，该文件太大了无法上传至GitHub，使用时需自行下载 `VOC`数据集并放在根目录下。
 
