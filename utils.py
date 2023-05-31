@@ -57,3 +57,20 @@ def collate_fn(batch):
         transformed_images.append(transform(img))
         targets.append(target)
     return transformed_images, targets
+
+def calculate_intersection_ratio(box1, box2):
+    # 计算交集的左上角和右下角坐标
+    x1 = max(box1[0], box2[0])
+    y1 = max(box1[1], box2[1])
+    x2 = min(box1[2], box2[2])
+    y2 = min(box1[3], box2[3])
+
+    # 计算交集面积和并集面积
+    intersection = max(0, x2 - x1 + 1) * max(0, y2 - y1 + 1)
+    area_box1 = (box1[2] - box1[0] + 1) * (box1[3] - box1[1] + 1)
+    area_box2 = (box2[2] - box2[0] + 1) * (box2[3] - box2[1] + 1)
+    min_area = min(area_box1, area_box2)
+
+    # 计算IoU
+    res = intersection / min_area if min_area > 0 else 0
+    return res
