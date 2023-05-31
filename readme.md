@@ -56,4 +56,5 @@
 ##已训练的模型
 
 results目录下没有训练好的模型，需要自己训练，本人训练好的模型保存在百度云。
-链接: https://pan.baidu.com/s/1akRg0PpzFu-AVvBL0s5cpg 提取码: 9c3d
+
+链接: https://pan.baidu.com/s/1f7jaFhsajQjEpYH1cN0PTw 提取码: iqem
